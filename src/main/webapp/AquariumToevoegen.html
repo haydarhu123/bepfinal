@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #0089b6;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #0089b6;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/StyleOfHtml.css" />
+</head>
+<body>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/AquariumToevoegen.js"></script>
+<script src="js/AuthenticatieBeveiliging.js"></script>
+<script>
+    ingelogd();
+    getRole();
+
+</script>
+
+
+
+
+
+
+<div class="container register">
+    <div class="row">
+        <div class="col-md-3 register-left">
+        </div>
+        <div class="col-md-9 register-right">
+            <form id="hettoevoegenvanaquarium">
+                <div class="container">
+                    <div class="form-group">
+                        <label for="naam">naam</label>
+                        </br>
+                        <input type="text" class="form-control" name="naam" id="naam" placeholder="naam">
+                    </div>
+                    <div class="form-group">
+                        <label for="lengte">lengte</label>
+                        </br>
+                        <input type="text" class="form-control" name="lengte" id="lengte" placeholder="lengte">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="breedte">breedte</label>
+                        </br>
+                        <input type="text" class="form-control" name="breedte" id="breedte" placeholder="breedte">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="hoogte">hoogte</label>
+                        </br>
+                        <input type="text" class="form-control" name="hoogte" id="hoogte" placeholder="hoogte">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="watersoort">watersoort</label>
+                        </br>
+                        <input type="text" class="form-control" name="watersoort" id="watersoort" placeholder="watersoort">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bodemsoort">bodemsoort</label>
+                        </br>
+                        <input type="text" class="form-control" name="bodemsoort" id="bodemsoort" placeholder="bodemsoort">
+                    </div>
+
+                </div>
+
+
+                <input type="button" class="btn btn-primary" onclick="aquariumToevoegen()" value="Aquarium Toevoegen" id="aquarium-toevoegen">
+            </form>
+        </div>
+    </div></div></div>
+</body>
+</html>
+<script src="/js/EigenAquariaBekijken.js"></script>

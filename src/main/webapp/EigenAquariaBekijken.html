@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #0089b6;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #0089b6;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/StyleOfHtml.css" />
+</head>
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/EigenAquariaBekijken.js"></script>
+<script src="js/AuthenticatieBeveiliging.js"></script>
+<script>
+    ingelogd();
+    getRole();
+    EigenAquariaBekijken();
+</script>
+
+
+<div class="table-responsive" id="sailorTableArea">
+    <table id="aquariaTable" class="table table-striped table-bordered" width="100%">
+
+        <nav class="main-navigation">
+            <div class="navbar-header animated fadeInUp">
+            </div>
+            <ul class="nav-list">
+                <li class="nav-list-item">
+                    <a href="AquariumToevoegen.html" class="nav-link">Nieuwe aquarium toevoegen</a>
+                </li>
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <a href="BewonerToevoegen.html" class="nav-link">Nieuwe bewoner toevoegen</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="BewonersBekijken.html" class="nav-link">Bewoners bekijken</a>
+                    </li>
+                </ul>
+                <li class="nav-item">
+                    <a class="nav-link " onclick="gaanuitloggen()">Uitloggen</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <thead>
+        <tr>
+            <th>Naam</th>
+            <th>Lengte</th>
+            <th>Breedte</th>
+            <th>Hoogte</th>
+            <th>Watersoort</th>
+            <th>Bodemsoort</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+</html>

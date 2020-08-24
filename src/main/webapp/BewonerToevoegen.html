@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #0089b6;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #0089b6;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/StyleOfHtml.css" />
+</head>
+<body>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/BewonersToevoegen.js"></script>
+<script src="js/AuthenticatieBeveiliging.js"></script>
+<script>
+    ingelogd();
+    BewonerToevoegen();
+</script>
+
+<form id="hettoevoegenvanbewoner">
+
+    <div class="container register">
+        <div class="row">
+            <div class="col-md-3 register-left">
+            </div>
+            <div class="col-md-9 register-right">
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 class="register-heading">Voer de gegevens in van de bewoner die u wilt toevoegen</h3>
+                        <div class="row register-form">
+                            <div class="col-md-6">
+
+                                <label for="soortnaam">Soortnaam</label>
+                                <input type="text" name="soortnaam" id="soortnaam" tabindex="1" class="form-control" placeholder="Soortnaam" value="">
+
+                                <label for="kleurnaam">Kleurnaam</label>
+                                <input type="text" name="kleurnaam" id="kleurnaam" tabindex="2" class="form-control" placeholder="Kleurnaam">
+
+                                <label for="aantal">Aantal</label>
+                                <input type="text" name="aantal" id="aantal" tabindex="3" class="form-control" placeholder="Aantal" value="">
+
+
+                                <hr>
+                                <input type="button" class="btn btn-primary" onclick="BewonerToevoegen()" value="Bewoner Toevoegen" id="bewoner-toevoegen">
+
+                            </div>
+                            <br>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+</body>
+</html>
